@@ -1,0 +1,46 @@
+/* src/styles/Navbar.css */
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 20px;
+    width: 10%; /* Adjust width to 100% for better responsiveness */
+    background: #008080; /* Background color */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns logo to the left and nav-links to the right */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents the logo from breaking into multiple lines */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 15px; /* Adjust padding for small screens */
+        width: 25%;
+    }
+
+    .logo {
+        font-size: 18px; /* Decrease font size of the logo on small screens */
+    }
+
+    .nav-links {
+        gap: 10px; /* Reduce spacing between navigation items */
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Reduce font size of the nav links */
+    }
+}

@@ -1,0 +1,302 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #D3D3D3;
+}
+
+.main-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #D3D3D3;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #87CEEB;
+  color: #008080;
+  font-weight: bold;
+}
+
+.blog h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.tokenization h1, p, h2 {
+  text-align: center;
+}
+
+.tokenization h3 {
+  color: #008080;
+}
+
+.blog h2, p {
+  text-align: center;
+}
+
+.div1, .div8, .div6 {
+  flex: 1;
+  padding: 20px;
+}
+
+.div2, .div9, .div7 {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.blockchain-image, .solution-image, .contact-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.div2 img, .div9 img, .div7 img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* Team Section */
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 40px auto; /* Centers the team section */
+  padding: 5px;
+  max-width: 1200px; /* Limits the width of the team section */
+  justify-content: center; /* Centers the grid content horizontally */
+  border-radius: 10px;
+}
+
+.team3 {
+  text-align: center;
+}
+
+.member {
+  text-align: center;
+}
+
+.team-image {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 0 auto; /* Ensures the image is centered within the grid item */
+}
+
+/* Solutions Section */
+.solution-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.div8, .div6 {
+  flex: 1;
+}
+
+.div9, .div7 {
+  flex: 1;
+}
+
+/* Contact Section */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.div6 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #008080;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #87CEEB;
+  color: #008080;
+}
+
+/* Flexbox styling for the sections */
+.div6, .div8 {
+  flex: 1;
+}
+
+.div7, .div9 {
+  flex: 1;
+}
+
+/* Image styling */
+.contact-image, .solution-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+
+  .solution-content {
+    flex-direction: column-reverse;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .contact-form input, .contact-form textarea, .contact-form button {
+    max-width: 100%;
+  }
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    margin-top: 40px;
+  }
+
+  .team-image {
+    width: 250px;
+    height: 350px;
+  
+    border-radius: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .div1, .div8, .div6 {
+    order: 1;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .div2, .div9, .div7 {
+    order: 0;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .div2 img, .div9 img, .div7 img {
+   max-width: 250px;
+   height: 200px;
+  }
+
+  .contact-form {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .contact-form input, .contact-form textarea, .contact-form button {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
+.team-image {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(10px, 5px, 0, 0.3); /* Larger shadow for bigger images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+/* Hover effect: scale up and intensify shadow */
+.contact-image:hover, .solution-image:hover, .team-image:hover, .div2 img:hover, .div9 img:hover, .div7 img:hover {
+  transform: scale(1.05); /* Slightly scale the image */
+  box-shadow: 0 8px 16px rgba(10px, 10px, 0, 0.4); /* Darker and larger shadow on hover */
+}
+
